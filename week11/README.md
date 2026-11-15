@@ -27,7 +27,7 @@ CCW реті сақталған); екі `glVertexAttribPointer` та stride = 5
 ![](screenshots/01-basic.png)
 
 Тексеру: терминалда өлшем мен арна шығады ✔ · алты жақта да сурет бар ✔ · жазу дұрыс оқылады (төңкерілмеген) ✔ ·
-алыстағы кубтарда mipmap қосулы (`GL_LINEAR_MIPMAP_LINEAR`), сондықтан шуыл мен жыпылық азаяды (стильдік скриншоттармен салыстыру — 3-тапсырма).
+алыстағы кубтарда mipmap қосулы (`GL_LINEAR_MIPMAP_LINEAR`), сондықтан шуыл мен жыпылық азаяды (салыстыру — 3-тапсырмадағы `08` және `09` скриншоттары).
 
 ## Скриншоттар
 
@@ -40,8 +40,8 @@ CCW реті сақталған); екі `glVertexAttribPointer` та stride = 5
 | `03-mirrored.png` | 1 | `--uv-mul 2 --wrap mirror` |
 | `04-clamp-edge.png` | 1 | `--uv-mul 2 --wrap edge` |
 | `05-clamp-border.png` | 1 | `--uv-mul 2 --wrap border` |
-| `06-nearest.png` / `07-linear.png` | 2 | `--uv-mul 0.1 --fov 8 --mag nearest|linear` |
-| `08-no-mipmap.png` / `09-mipmap.png` | 3 | `--far --fov 12 --cam 0,0,-20 --min linear|mipmap` |
+| `06-nearest.png` / `07-linear.png` | 2 | `--uv-mul 0.1 --fov 8 --mag nearest` / `--mag linear` |
+| `08-no-mipmap.png` / `09-mipmap.png` | 3 | `--far --fov 12 --cam 0,0,-20 --min linear` / `--min mipmap` |
 | `10-black-cube.png` | 4 | `--min nomip` (төменде түсіндірілген) |
 | `10b-mag-bad-not-black.png` | 4 | `--mag bad` |
 | `Q4-aniso-off.png` / `Q4-aniso-on.png` | Қ4 | `--floor --cam 0,0.5,3 --pitch -8 [--aniso]` |
